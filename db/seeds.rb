@@ -29,7 +29,7 @@ Restaurant.destroy_all
 end
 
 10.times do
-    Restaurant.create(
+        Restaurant.create(
         name: Faker::Restaurant.unique.name
     )
 end

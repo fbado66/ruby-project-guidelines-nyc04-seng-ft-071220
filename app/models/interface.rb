@@ -8,14 +8,16 @@ class Interface
 
     def welcome 
         OrderHere.go
-        
-        puts "Luk I am your father".colorize(:red)
+        puts "🥗🍜😁Welcome to FOODIES😁🍜🥗"
+        system('say "Welcome to FOODIES"')
+        puts "Bet you are starving"
+        system('say "Bet you are starving"')
     end 
 
     def choose_login_or_signup
         prompt.select("Are you logging in or registering") do |menu|
-            menu.choice "Logging in", ->{user_logging_in}
-            menu.choice "Signing up", ->{user_signing_up}
+            menu.choice "Log in", ->{user_logging_in}
+            menu.choice "Sign up", ->{user_signing_up}
         end 
     end 
 
