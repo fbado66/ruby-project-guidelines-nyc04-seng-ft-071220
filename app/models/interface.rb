@@ -7,7 +7,9 @@ class Interface
     end
 
     def welcome 
-        puts "Luk I am your father"
+        OrderHere.go
+        
+        puts "Luk I am your father".colorize(:red)
     end 
 
     def choose_login_or_signup
