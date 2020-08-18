@@ -33,12 +33,13 @@ class Interface
         system "clear"
         puts "Welcome to the dark side #{self.user.name}"
         prompt.select("What else can we do") do |menu|
-            menu.choice "Some choice", -> {puts "Comming soon"}
-            menu.choice "Some other choice", -> {puts "Comming soon"}
+            menu.choice "Profile", -> {puts "profile_method"}
+            menu.choice "Place your order", -> {puts "Placing_your_order"}
         end 
     end 
 
+    def profile_method
+    end
 
-  
 
 end 
